@@ -33,10 +33,10 @@ class FLTMonocoloredPrimaryButton extends StatelessWidget {
     return NFTTheme(
       data: theme.copyWith(
         buttonThemeData: theme.buttonThemeData.copyWith(
-          monocoloredFillColor: FLTColors.blue,
+          monocoloredFillColor: theme.colorScheme.primaryBtnBackgroundColor,
           monocoloredFilledTextStyle:
               getButtonTextStyle(ButtonType.primary, size).copyWith(
-            color: theme.colorScheme.differentThemeMainColor,
+            color: theme.colorScheme.primaryBtnTxtColor,
           ),
           borderRadius: size.heightInPixels / 2,
         ),
@@ -44,7 +44,6 @@ class FLTMonocoloredPrimaryButton extends StatelessWidget {
       child: SizedBox(
         height: size.heightInPixels,
         child: NFTMonocoloredButton(
-          textColor: textColor,
           onPressed: onPressed,
           text: text,
           prefixIcon: prefixIcon,

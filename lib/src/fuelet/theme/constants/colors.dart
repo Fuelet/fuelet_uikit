@@ -5,6 +5,11 @@ class FLTColors {
   FLTColors._();
 
   static const blue = Color(0xff27A4FF);
+  static const greenCow = Color(0xffC5FC3B);
+  static const environmentalStudy = Color(0xff8CC300);
+  static const unicornSilver = Color(0xffE8E8E8);
+
+  static const orchid = Color(0xff7986FF);
 
   static const blueSecondary = Color(0xff7AE4FF);
 
