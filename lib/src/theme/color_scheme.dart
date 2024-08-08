@@ -1,4 +1,4 @@
-import 'package:flutter/rendering.dart';
+import 'package:flutter/material.dart';
 
 import '../../fuelet_uikit.dart';
 
@@ -19,25 +19,66 @@ class NFTColorScheme {
   final Color shimmerColor;
   final Color tooltipColor;
   final Color differentMinorTextColor;
+  final Color primaryBtnTxtColor;
+  final Color primaryBtnBackgroundColor;
+  final Color seedPhraseTextColor;
+  final Color walletListItemBorderColor;
+  final Color radioBtnEnableStateBackgroundColor;
+  final Color walletAddedLable;
+  final Color walletAddedLableBackground;
+  final Color progressIndicatorColor;
+  final Color importWalletIconColor;
+  final Color transactionActionBtnBackgroundColor;
+  final Color transactionActionTextColor;
+  final Color bottomNavActiveItemColor;
+  final Color additionalOfferListItemBorderColor;
+  final Color additionalOfferActionBtnBackgroundColor;
+  final Color additionalOfferTittleBackgroundColor;
+  final Color additionalOfferDescriptionBackgroundColor;
+  final Color finishSettingUpIconBackgroundColor;
+  final Color finishSettingUpIconColor;
+  final Color finishSettingUpListBackgroundColor;
+  final Color finishSettingUpListDividerBackgroundColor;
+  final Color finishSettingUpListBorderColor;
 
-  const NFTColorScheme({
-    required this.backgroundColor,
-    required this.backgroundColorContrastive,
-    required this.backgroundColorSoft,
-    required this.backgroundColorAccent,
-    required this.mainTextColor,
-    required this.minorTextColor,
-    required this.minorDarkTextColor,
-    required this.minorLightTextColor,
-    required this.activeButtonTextColor,
-    required this.differentThemeMainColor,
-    required this.infoBannerTextColor,
-    required this.infoBannerColor,
-    required this.topBannerButtonColor,
-    required this.shimmerColor,
-    required this.differentMinorTextColor,
-    required this.tooltipColor,
-  });
+  const NFTColorScheme(
+      {required this.backgroundColor,
+      required this.backgroundColorContrastive,
+      required this.backgroundColorSoft,
+      required this.backgroundColorAccent,
+      required this.mainTextColor,
+      required this.minorTextColor,
+      required this.minorDarkTextColor,
+      required this.minorLightTextColor,
+      required this.activeButtonTextColor,
+      required this.differentThemeMainColor,
+      required this.infoBannerTextColor,
+      required this.infoBannerColor,
+      required this.topBannerButtonColor,
+      required this.shimmerColor,
+      required this.differentMinorTextColor,
+      required this.tooltipColor,
+      required this.primaryBtnBackgroundColor,
+      required this.primaryBtnTxtColor,
+      required this.seedPhraseTextColor,
+      required this.walletListItemBorderColor,
+      required this.radioBtnEnableStateBackgroundColor,
+      required this.walletAddedLable,
+      required this.walletAddedLableBackground,
+      required this.progressIndicatorColor,
+      required this.importWalletIconColor,
+      required this.transactionActionBtnBackgroundColor,
+      required this.bottomNavActiveItemColor,
+      required this.additionalOfferListItemBorderColor,
+      required this.additionalOfferActionBtnBackgroundColor,
+      required this.additionalOfferTittleBackgroundColor,
+      required this.additionalOfferDescriptionBackgroundColor,
+      required this.finishSettingUpIconBackgroundColor,
+      required this.finishSettingUpIconColor,
+      required this.finishSettingUpListBackgroundColor,
+      required this.finishSettingUpListDividerBackgroundColor,
+      required this.finishSettingUpListBorderColor,
+      required this.transactionActionTextColor});
 
   static NFTColorScheme get light => const NFTColorScheme(
         backgroundColor: NFTColors.white,
@@ -56,68 +97,171 @@ class NFTColorScheme {
         shimmerColor: FLTColors.greyF5,
         tooltipColor: NFTColors.greyCC,
         differentMinorTextColor: NFTColors.grey6D,
+        primaryBtnBackgroundColor: FLTColors.greenCow,
+        primaryBtnTxtColor: NFTColors.charlestonGreen2F,
+        seedPhraseTextColor: FLTColors.greenCow,
+        walletListItemBorderColor: FLTColors.greenCow,
+        radioBtnEnableStateBackgroundColor: FLTColors.greenCow,
+        walletAddedLable: FLTColors.greenCow,
+        walletAddedLableBackground: FLTColors.greenCow,
+        progressIndicatorColor: FLTColors.greenCow,
+        importWalletIconColor: FLTColors.charlestonGreen2F,
+        transactionActionBtnBackgroundColor: NFTColors.greyF5,
+        transactionActionTextColor: NFTColors.charlestonGreen2F,
+        bottomNavActiveItemColor: FLTColors.greenCow,
+        additionalOfferListItemBorderColor: FLTColors.unicornSilver,
+        additionalOfferActionBtnBackgroundColor: FLTColors.greenCow,
+        additionalOfferTittleBackgroundColor: FLTColors.charlestonGreen2F,
+        additionalOfferDescriptionBackgroundColor: FLTColors.grey9D,
+        finishSettingUpIconBackgroundColor: FLTColors.greenCow,
+        finishSettingUpIconColor: FLTColors.environmentalStudy,
+        finishSettingUpListBackgroundColor: Colors.transparent,
+        finishSettingUpListDividerBackgroundColor: FLTColors.unicornSilver,
+        finishSettingUpListBorderColor: FLTColors.unicornSilver,
       );
 
   static NFTColorScheme get dark => const NFTColorScheme(
-        backgroundColor: FLTColors.darkBackground,
-        backgroundColorContrastive: NFTColors.darkGreyBackground,
-        backgroundColorSoft: NFTColors.darkBackground,
-        backgroundColorAccent: NFTColors.darkGreyBackground,
-        mainTextColor: NFTColors.white,
-        minorTextColor: NFTColors.grey6D,
-        minorDarkTextColor: NFTColors.grey9D,
-        minorLightTextColor: NFTColors.grey6D,
-        activeButtonTextColor: NFTColors.grey6D,
-        differentThemeMainColor: NFTColors.black,
-        infoBannerTextColor: NFTColors.grey9D,
-        infoBannerColor: NFTColors.charlestonGreen2F,
-        topBannerButtonColor: NFTColors.granitBlack39,
-        shimmerColor: NFTColors.white,
-        differentMinorTextColor: NFTColors.grey9D,
-        tooltipColor: NFTColors.darkGrey19,
-      );
+      backgroundColor: FLTColors.darkBackground,
+      backgroundColorContrastive: NFTColors.darkGreyBackground,
+      backgroundColorSoft: NFTColors.darkBackground,
+      backgroundColorAccent: NFTColors.darkGreyBackground,
+      mainTextColor: NFTColors.white,
+      minorTextColor: NFTColors.grey6D,
+      minorDarkTextColor: NFTColors.grey9D,
+      minorLightTextColor: NFTColors.grey6D,
+      activeButtonTextColor: NFTColors.grey6D,
+      differentThemeMainColor: NFTColors.black,
+      infoBannerTextColor: NFTColors.grey9D,
+      infoBannerColor: NFTColors.charlestonGreen2F,
+      topBannerButtonColor: NFTColors.granitBlack39,
+      shimmerColor: NFTColors.white,
+      differentMinorTextColor: NFTColors.grey9D,
+      tooltipColor: NFTColors.darkGrey19,
+      primaryBtnBackgroundColor: FLTColors.greenCow,
+      primaryBtnTxtColor: NFTColors.charlestonGreen2F,
+      seedPhraseTextColor: FLTColors.greenCow,
+      walletListItemBorderColor: FLTColors.greenCow,
+      radioBtnEnableStateBackgroundColor: FLTColors.greenCow,
+      walletAddedLable: FLTColors.greenCow,
+      walletAddedLableBackground: FLTColors.greenCow,
+      progressIndicatorColor: FLTColors.greenCow,
+      importWalletIconColor: FLTColors.charlestonGreen2F,
+      transactionActionBtnBackgroundColor: NFTColors.charlestonGreen2F,
+      transactionActionTextColor: NFTColors.grey9D,
+      bottomNavActiveItemColor: FLTColors.greenCow,
+      additionalOfferListItemBorderColor: NFTColors.grey6D,
+      additionalOfferActionBtnBackgroundColor: FLTColors.greenCow,
+      additionalOfferTittleBackgroundColor: NFTColors.white,
+      additionalOfferDescriptionBackgroundColor: FLTColors.grey6D,
+      finishSettingUpIconBackgroundColor: FLTColors.environmentalStudy,
+      finishSettingUpIconColor: FLTColors.greenCow,
+      finishSettingUpListBackgroundColor: NFTColors.darkGreyBackground,
+      finishSettingUpListDividerBackgroundColor: NFTColors.grey6D,
+      finishSettingUpListBorderColor: NFTColors.darkGreyBackground);
 
-  NFTColorScheme copyWith({
-    Color? backgroundColor,
-    Color? backgroundColorContrastive,
-    Color? backgroundColorSoft,
-    Color? backgroundColorAccent,
-    Color? mainTextColor,
-    Color? minorTextColor,
-    Color? minorDarkTextColor,
-    Color? minorLightTextColor,
-    Color? activeButtonTextColor,
-    Color? differentThemeMainColor,
-    Color? infoBannerTextColor,
-    Color? infoBannerColor,
-    Color? topBannerButtonColor,
-    Color? shimmerColor,
-    Color? differentMinorTextColor,
-    Color? tooltipColor,
-  }) {
+  NFTColorScheme copyWith(
+      {Color? backgroundColor,
+      Color? backgroundColorContrastive,
+      Color? backgroundColorSoft,
+      Color? backgroundColorAccent,
+      Color? mainTextColor,
+      Color? minorTextColor,
+      Color? minorDarkTextColor,
+      Color? minorLightTextColor,
+      Color? activeButtonTextColor,
+      Color? differentThemeMainColor,
+      Color? infoBannerTextColor,
+      Color? infoBannerColor,
+      Color? topBannerButtonColor,
+      Color? shimmerColor,
+      Color? differentMinorTextColor,
+      Color? tooltipColor,
+      Color? primaryBtnBackgroundColor,
+      Color? primaryBtnTxtColor,
+      Color? seedPhraseTextColor,
+      Color? walletListItemBorderColor,
+      Color? radioBtnEnableStateBackgroundColor,
+      Color? walletAddedLable,
+      Color? progressIndicatorColor,
+      Color? walletAddedLableBackground,
+      Color? importWalletIconColor,
+      Color? transactionActionBtnBackgroundColor,
+      Color? transactionActionTextColor,
+      Color? bottomNavActiveItemColor,
+      Color? additionalOfferListItemBorderColor,
+      Color? additionalOfferActionBtnBackgroundColor,
+      Color? additionalOfferTittleBackgroundColor,
+      Color? additionalOfferDescriptionBackgroundColor,
+      Color? finishSettingUpIconBackgroundColor,
+      Color? finishSettingUpIconColor,
+      Color? finishSettingUpListBackgroundColor,
+      Color? finishSettingUpListDividerBackgroundColor,
+      Color? finishSettingUpListBorderColor}) {
     return NFTColorScheme(
-      backgroundColor: backgroundColor ?? this.backgroundColor,
-      backgroundColorContrastive:
-          backgroundColorContrastive ?? this.backgroundColorContrastive,
-      backgroundColorSoft: backgroundColorSoft ?? this.backgroundColorSoft,
-      backgroundColorAccent:
-          backgroundColorAccent ?? this.backgroundColorAccent,
-      mainTextColor: mainTextColor ?? this.mainTextColor,
-      minorTextColor: minorTextColor ?? this.minorTextColor,
-      minorDarkTextColor: minorDarkTextColor ?? this.minorDarkTextColor,
-      minorLightTextColor: minorLightTextColor ?? this.minorLightTextColor,
-      activeButtonTextColor:
-          activeButtonTextColor ?? this.activeButtonTextColor,
-      differentThemeMainColor:
-          differentThemeMainColor ?? this.differentThemeMainColor,
-      infoBannerTextColor: infoBannerTextColor ?? this.infoBannerTextColor,
-      topBannerButtonColor: topBannerButtonColor ?? this.topBannerButtonColor,
-      infoBannerColor: infoBannerColor ?? this.infoBannerColor,
-      shimmerColor: shimmerColor ?? this.shimmerColor,
-      differentMinorTextColor:
-          differentMinorTextColor ?? this.differentMinorTextColor,
-      tooltipColor: tooltipColor ?? this.tooltipColor,
-    );
+        backgroundColor: backgroundColor ?? this.backgroundColor,
+        backgroundColorContrastive:
+            backgroundColorContrastive ?? this.backgroundColorContrastive,
+        backgroundColorSoft: backgroundColorSoft ?? this.backgroundColorSoft,
+        backgroundColorAccent:
+            backgroundColorAccent ?? this.backgroundColorAccent,
+        mainTextColor: mainTextColor ?? this.mainTextColor,
+        minorTextColor: minorTextColor ?? this.minorTextColor,
+        minorDarkTextColor: minorDarkTextColor ?? this.minorDarkTextColor,
+        minorLightTextColor: minorLightTextColor ?? this.minorLightTextColor,
+        activeButtonTextColor:
+            activeButtonTextColor ?? this.activeButtonTextColor,
+        differentThemeMainColor:
+            differentThemeMainColor ?? this.differentThemeMainColor,
+        infoBannerTextColor: infoBannerTextColor ?? this.infoBannerTextColor,
+        topBannerButtonColor: topBannerButtonColor ?? this.topBannerButtonColor,
+        infoBannerColor: infoBannerColor ?? this.infoBannerColor,
+        shimmerColor: shimmerColor ?? this.shimmerColor,
+        differentMinorTextColor:
+            differentMinorTextColor ?? this.differentMinorTextColor,
+        tooltipColor: tooltipColor ?? this.tooltipColor,
+        primaryBtnTxtColor: primaryBtnTxtColor ?? this.primaryBtnTxtColor,
+        seedPhraseTextColor: seedPhraseTextColor ?? this.seedPhraseTextColor,
+        primaryBtnBackgroundColor:
+            primaryBtnBackgroundColor ?? this.primaryBtnBackgroundColor,
+        walletListItemBorderColor:
+            walletListItemBorderColor ?? this.walletListItemBorderColor,
+        radioBtnEnableStateBackgroundColor: radioBtnEnableStateBackgroundColor ??
+            this.radioBtnEnableStateBackgroundColor,
+        walletAddedLable: walletAddedLable ?? this.walletAddedLable,
+        walletAddedLableBackground:
+            walletAddedLableBackground ?? this.walletAddedLableBackground,
+        progressIndicatorColor:
+            progressIndicatorColor ?? this.progressIndicatorColor,
+        importWalletIconColor:
+            importWalletIconColor ?? this.importWalletIconColor,
+        transactionActionBtnBackgroundColor: transactionActionBtnBackgroundColor ??
+            this.transactionActionBtnBackgroundColor,
+        transactionActionTextColor:
+            transactionActionTextColor ?? this.transactionActionTextColor,
+        bottomNavActiveItemColor:
+            bottomNavActiveItemColor ?? this.bottomNavActiveItemColor,
+        additionalOfferListItemBorderColor: additionalOfferListItemBorderColor ??
+            this.additionalOfferListItemBorderColor,
+        additionalOfferActionBtnBackgroundColor:
+            additionalOfferActionBtnBackgroundColor ??
+                this.additionalOfferActionBtnBackgroundColor,
+        additionalOfferTittleBackgroundColor:
+            additionalOfferTittleBackgroundColor ??
+                this.additionalOfferTittleBackgroundColor,
+        additionalOfferDescriptionBackgroundColor:
+            additionalOfferDescriptionBackgroundColor ??
+                this.additionalOfferDescriptionBackgroundColor,
+        finishSettingUpIconBackgroundColor: finishSettingUpIconBackgroundColor ??
+            this.finishSettingUpIconBackgroundColor,
+        finishSettingUpIconColor:
+            finishSettingUpIconColor ?? this.finishSettingUpIconColor,
+        finishSettingUpListBackgroundColor: finishSettingUpListBackgroundColor ??
+            this.finishSettingUpListBackgroundColor,
+        finishSettingUpListDividerBackgroundColor:
+            finishSettingUpListDividerBackgroundColor ??
+                this.finishSettingUpListDividerBackgroundColor,
+        finishSettingUpListBorderColor: finishSettingUpListBorderColor ??
+            this.finishSettingUpListBorderColor);
   }
 
   @override
@@ -138,7 +282,38 @@ class NFTColorScheme {
           shimmerColor == other.shimmerColor &&
           activeButtonTextColor == other.activeButtonTextColor &&
           tooltipColor == other.tooltipColor &&
-          minorDarkTextColor == other.minorDarkTextColor;
+          minorDarkTextColor == other.minorDarkTextColor &&
+          primaryBtnBackgroundColor == other.primaryBtnBackgroundColor &&
+          primaryBtnTxtColor == other.primaryBtnTxtColor &&
+          seedPhraseTextColor == other.seedPhraseTextColor &&
+          walletListItemBorderColor == other.walletListItemBorderColor &&
+          radioBtnEnableStateBackgroundColor ==
+              other.radioBtnEnableStateBackgroundColor &&
+          walletAddedLable == other.walletAddedLable &&
+          walletAddedLableBackground == other.walletAddedLableBackground &&
+          progressIndicatorColor == other.progressIndicatorColor &&
+          importWalletIconColor == other.importWalletIconColor &&
+          transactionActionBtnBackgroundColor ==
+              other.transactionActionBtnBackgroundColor &&
+          transactionActionTextColor == other.transactionActionTextColor &&
+          bottomNavActiveItemColor == other.bottomNavActiveItemColor &&
+          additionalOfferListItemBorderColor ==
+              other.bottomNavActiveItemColor &&
+          additionalOfferActionBtnBackgroundColor ==
+              other.additionalOfferActionBtnBackgroundColor &&
+          additionalOfferTittleBackgroundColor ==
+              other.additionalOfferTittleBackgroundColor &&
+          additionalOfferDescriptionBackgroundColor ==
+              other.additionalOfferDescriptionBackgroundColor &&
+          finishSettingUpIconBackgroundColor ==
+              other.finishSettingUpIconBackgroundColor &&
+          finishSettingUpIconColor == other.finishSettingUpIconColor &&
+          finishSettingUpListBackgroundColor ==
+              other.finishSettingUpListBackgroundColor &&
+          finishSettingUpListDividerBackgroundColor ==
+              other.finishSettingUpListDividerBackgroundColor &&
+          finishSettingUpListBorderColor ==
+              other.finishSettingUpListBorderColor;
 
   @override
   int get hashCode =>
@@ -155,5 +330,26 @@ class NFTColorScheme {
       activeButtonTextColor.hashCode ^
       shimmerColor.hashCode ^
       tooltipColor.hashCode ^
-      minorDarkTextColor.hashCode;
+      minorDarkTextColor.hashCode ^
+      primaryBtnBackgroundColor.hashCode ^
+      primaryBtnTxtColor.hashCode ^
+      seedPhraseTextColor.hashCode ^
+      walletListItemBorderColor.hashCode ^
+      radioBtnEnableStateBackgroundColor.hashCode ^
+      walletAddedLable.hashCode ^
+      walletAddedLableBackground.hashCode ^
+      progressIndicatorColor.hashCode ^
+      importWalletIconColor.hashCode ^
+      transactionActionBtnBackgroundColor.hashCode ^
+      transactionActionTextColor.hashCode ^
+      bottomNavActiveItemColor.hashCode ^
+      additionalOfferListItemBorderColor.hashCode ^
+      additionalOfferActionBtnBackgroundColor.hashCode ^
+      additionalOfferTittleBackgroundColor.hashCode ^
+      additionalOfferDescriptionBackgroundColor.hashCode ^
+      finishSettingUpIconBackgroundColor.hashCode ^
+      finishSettingUpIconColor.hashCode ^
+      finishSettingUpListBackgroundColor.hashCode ^
+      finishSettingUpListDividerBackgroundColor.hashCode ^
+      finishSettingUpListBorderColor.hashCode;
 }
