@@ -7,6 +7,7 @@ class NFTColorScheme {
   final Color backgroundColorContrastive;
   final Color backgroundColorSoft;
   final Color backgroundColorAccent;
+  final Color backgroundColorAccentNoOpacity;
   final Color mainTextColor;
   final Color minorTextColor;
   final Color minorDarkTextColor;
@@ -46,6 +47,7 @@ class NFTColorScheme {
       required this.backgroundColorContrastive,
       required this.backgroundColorSoft,
       required this.backgroundColorAccent,
+      required this.backgroundColorAccentNoOpacity,
       required this.mainTextColor,
       required this.minorTextColor,
       required this.minorDarkTextColor,
@@ -85,6 +87,7 @@ class NFTColorScheme {
         backgroundColorContrastive: NFTColors.white,
         backgroundColorSoft: NFTColors.greyF5,
         backgroundColorAccent: NFTColors.greyF5,
+        backgroundColorAccentNoOpacity: NFTColors.greyF5,
         mainTextColor: NFTColors.black,
         minorTextColor: NFTColors.grey9D,
         minorDarkTextColor: NFTColors.grey6D,
@@ -125,6 +128,7 @@ class NFTColorScheme {
       backgroundColorContrastive: NFTColors.darkGreyBackground,
       backgroundColorSoft: NFTColors.darkBackground,
       backgroundColorAccent: NFTColors.darkGreyBackground,
+      backgroundColorAccentNoOpacity: NFTColors.darkGreyBackgroundNoOpacity,
       mainTextColor: NFTColors.white,
       minorTextColor: NFTColors.grey6D,
       minorDarkTextColor: NFTColors.grey9D,
@@ -164,6 +168,7 @@ class NFTColorScheme {
       Color? backgroundColorContrastive,
       Color? backgroundColorSoft,
       Color? backgroundColorAccent,
+      Color? backgroundColorAccentNoOpacity,
       Color? mainTextColor,
       Color? minorTextColor,
       Color? minorDarkTextColor,
@@ -204,6 +209,8 @@ class NFTColorScheme {
         backgroundColorSoft: backgroundColorSoft ?? this.backgroundColorSoft,
         backgroundColorAccent:
             backgroundColorAccent ?? this.backgroundColorAccent,
+        backgroundColorAccentNoOpacity: backgroundColorAccentNoOpacity ??
+            this.backgroundColorAccentNoOpacity,
         mainTextColor: mainTextColor ?? this.mainTextColor,
         minorTextColor: minorTextColor ?? this.minorTextColor,
         minorDarkTextColor: minorDarkTextColor ?? this.minorDarkTextColor,
@@ -273,6 +280,8 @@ class NFTColorScheme {
           backgroundColorContrastive == other.backgroundColorContrastive &&
           backgroundColorSoft == other.backgroundColorSoft &&
           backgroundColorAccent == other.backgroundColorAccent &&
+          backgroundColorAccentNoOpacity ==
+              other.backgroundColorAccentNoOpacity &&
           mainTextColor == other.mainTextColor &&
           minorTextColor == other.minorTextColor &&
           minorLightTextColor == other.minorLightTextColor &&

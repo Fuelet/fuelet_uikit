@@ -67,6 +67,7 @@ class NFTColors {
   // ===
   static const darkBackground = Color(0xFF17181C);
   static const darkGreyBackground = Color(0x3357575F);
+  static const darkGreyBackgroundNoOpacity = Color(0xFF313139);
   static const darkGreyBackgroundOld = Color(0xFF242328);
   static const darkGrey19 = Color(0xFF191919);
 
