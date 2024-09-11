@@ -296,6 +296,14 @@ abstract class NFTTypography {
       letterSpacing: _defaultLetterSpacing,
     ),
   );
+  static final body4Medium = TypographyUtils.platformSensitiveTextStyle(
+    style: const TextStyle(
+      fontSize: 12,
+      fontFamily: fontFamilySFUIDisplay,
+      fontWeight: FontWeight.w500,
+      letterSpacing: _defaultLetterSpacing,
+    ),
+  );
   static final body4SemiBold = TypographyUtils.platformSensitiveTextStyle(
     style: const TextStyle(
       fontSize: 12,
