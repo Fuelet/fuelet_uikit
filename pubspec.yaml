@@ -1,6 +1,6 @@
 name: fuelet_uikit
 description: A UIKit package for nft_app_flutter project
-version: 1.0.1
+version: 1.0.3
 publish_to: "none"
 
 environment:
@@ -27,3 +27,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/icons/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: lib/fonts/Inter.ttf
