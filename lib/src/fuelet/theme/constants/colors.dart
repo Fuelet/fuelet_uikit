@@ -6,7 +6,7 @@ class FLTColors {
 
   static const blue = Color(0xff27A4FF);
   static const greenCow = Color(0xffC5FC3B);
-  static const environmentalStudy = Color(0xff8CC300);
+  static const environmentalStudy = Color(0xff8BC101);
   static const unicornSilver = Color(0xffE8E8E8);
 
   static const orchid = Color(0xff7986FF);
@@ -26,6 +26,8 @@ class FLTColors {
   static const grey60 = Color(0xff575760);
   static const grey82 = Color(0xff747882);
   static const grey2A = Color(0xff29292A);
+
+  static const cerebralGrey = Color(0xcccccccc);
 
   static const charlestonGreen2E = Color(0xff2E2E2E);
   static const charlestonGreen29 = Color(0xFF57575F);
