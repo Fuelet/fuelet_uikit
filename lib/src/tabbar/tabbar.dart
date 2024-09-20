@@ -49,9 +49,9 @@ class _NFTTabBarPageState extends State<NFTTabBarPage> {
           ),
           child: Theme(
             data: Theme.of(context).copyWith(
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-            ),
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                hoverColor: Colors.transparent),
             child: BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
               key: widget.navBarKey,
