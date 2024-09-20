@@ -6,7 +6,7 @@ abstract class NFTTypography {
   const NFTTypography._();
 
   // Font Families
-  static const fontFamilySFUIDisplay = '.SF UI Display';
+  static const fontFamilySFUIDisplay = 'Inter';
   static const _defaultLetterSpacing = -0.5;
 
   // title3
