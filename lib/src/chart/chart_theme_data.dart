@@ -13,6 +13,7 @@ class NFTChartThemeData {
   final TextStyle horizontalExtraLineLabelTextStyle;
   final double aspectRatio;
   final Color progressIndicatorColor;
+  final Color chartIndicatorColor;
   final Color dotSelectorColor;
   final Gradient? barAreaGradient;
 
@@ -27,6 +28,7 @@ class NFTChartThemeData {
     required this.horizontalExtraLineLabelTextStyle,
     required this.aspectRatio,
     required this.progressIndicatorColor,
+    required this.chartIndicatorColor,
     required this.dotSelectorColor,
     this.barAreaGradient,
   });
@@ -46,7 +48,8 @@ class NFTChartThemeData {
             NFTTypography.body3Normal.copyWith(color: NFTColors.grey6D),
         aspectRatio: 1.5,
         progressIndicatorColor: NFTColors.purple,
-        dotSelectorColor: FLTColors.blue,
+        chartIndicatorColor: FLTColors.environmentalStudy,
+        dotSelectorColor: FLTColors.environmentalStudy,
         barAreaGradient: LinearGradient(
           colors: [
             const Color(0xff91E6FC).withOpacity(.05),
@@ -64,6 +67,8 @@ class NFTChartThemeData {
         tooltipAccentTextColor: FLTColors.blue,
         barSelectedColor: NFTColors.white,
         horizontalExtraLineColor: NFTColors.grey6D.withOpacity(0.2),
+        chartIndicatorColor: FLTColors.greenCow,
+        dotSelectorColor: FLTColors.greenCow,
       );
 
   NFTChartThemeData copyWith({
@@ -77,6 +82,7 @@ class NFTChartThemeData {
     TextStyle? horizontalExtraLineLabelTextStyle,
     double? aspectRatio,
     Color? progressIndicatorColor,
+    Color? chartIndicatorColor,
     Color? dotSelectorColor,
     Gradient? barAreaGradient,
   }) {
@@ -95,6 +101,7 @@ class NFTChartThemeData {
       aspectRatio: aspectRatio ?? this.aspectRatio,
       progressIndicatorColor:
           progressIndicatorColor ?? this.progressIndicatorColor,
+      chartIndicatorColor: chartIndicatorColor ?? this.chartIndicatorColor,
       dotSelectorColor: dotSelectorColor ?? this.dotSelectorColor,
       barAreaGradient: barAreaGradient ?? this.barAreaGradient,
     );
@@ -114,6 +121,7 @@ class NFTChartThemeData {
               other.horizontalExtraLineLabelTextStyle &&
           aspectRatio == other.aspectRatio &&
           progressIndicatorColor == other.progressIndicatorColor &&
+          chartIndicatorColor == other.chartIndicatorColor &&
           dotSelectorColor == other.dotSelectorColor &&
           tooltipTitleColor == other.tooltipTitleColor &&
           tooltipBgColor == other.tooltipBgColor &&
@@ -129,6 +137,7 @@ class NFTChartThemeData {
       horizontalExtraLineLabelTextStyle.hashCode ^
       aspectRatio.hashCode ^
       progressIndicatorColor.hashCode ^
+      chartIndicatorColor.hashCode ^
       dotSelectorColor.hashCode ^
       tooltipTitleColor.hashCode ^
       tooltipBgColor.hashCode ^

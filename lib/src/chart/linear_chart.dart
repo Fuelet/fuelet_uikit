@@ -116,7 +116,7 @@ class _NFTChartState extends State<NFTChart> {
             cutOffY: 4,
             gradient: theme.chartThemeData.barAreaGradient,
           ),
-          color: FLTColors.blue,
+          color: theme.chartThemeData.chartIndicatorColor,
           barWidth: 1.5,
           isCurved: true,
           isStrokeCapRound: true,
