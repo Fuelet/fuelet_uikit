@@ -7,7 +7,7 @@ abstract class NFTTypography {
 
   // Font Families
   static const fontFamilySFUIDisplay = 'Inter';
-  static const _defaultLetterSpacing = -0.5;
+  static const _defaultLetterSpacing = 0.5;
 
   // title3
   static final title3Normal = TypographyUtils.platformSensitiveTextStyle(
