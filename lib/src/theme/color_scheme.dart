@@ -170,7 +170,7 @@ class NFTColorScheme {
       transactionActionBtnBackgroundColor: NFTColors.charlestonGreen2F,
       transactionActionTextColor: NFTColors.grey9D,
       bottomNavActiveItemColor: FLTColors.greenCow,
-      additionalOfferListItemBorderColor: NFTColors.grey6D,
+      additionalOfferListItemBorderColor: FLTColors.offBlack,
       additionalOfferListItemBackgroundColor: Colors.transparent,
       additionalOfferActionBtnBackgroundColor: FLTColors.greenCow,
       additionalOfferTittleBackgroundColor: NFTColors.white,
