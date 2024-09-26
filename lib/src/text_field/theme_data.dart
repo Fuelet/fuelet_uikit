@@ -12,32 +12,33 @@ class NFTTextFieldThemeData {
   final Color cursorColor;
   final TextStyle textStyle;
   final TextStyle hintStyle;
+  final Color backgroundColor;
 
-  const NFTTextFieldThemeData({
-    required this.enabledBorder,
-    required this.focusedBorder,
-    required this.cursorColor,
-    required this.textStyle,
-    required this.hintStyle,
-  });
+  const NFTTextFieldThemeData(
+      {required this.enabledBorder,
+      required this.focusedBorder,
+      required this.cursorColor,
+      required this.textStyle,
+      required this.hintStyle,
+      required this.backgroundColor});
 
   static NFTTextFieldThemeData get light => NFTTextFieldThemeData(
-        enabledBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color: NFTColors.grey6D,
-          ),
+      enabledBorder: const UnderlineInputBorder(
+        borderSide: BorderSide(
+          width: 1,
+          color: NFTColors.grey6D,
         ),
-        focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color: NFTColors.purple,
-          ),
+      ),
+      focusedBorder: const UnderlineInputBorder(
+        borderSide: BorderSide(
+          width: 1,
+          color: NFTColors.purple,
         ),
-        cursorColor: NFTColors.purple,
-        textStyle: NFTTypography.body1Normal.copyWith(color: NFTColors.black),
-        hintStyle: NFTTypography.body1Normal.copyWith(color: NFTColors.greyB2),
-      );
+      ),
+      cursorColor: NFTColors.purple,
+      textStyle: NFTTypography.body1Normal.copyWith(color: NFTColors.black),
+      hintStyle: NFTTypography.body1Normal.copyWith(color: NFTColors.greyB2),
+      backgroundColor: NFTColors.greyF5);
 
   static NFTTextFieldThemeData get dark => light.copyWith(
         enabledBorder: light.enabledBorder.copyWith(
@@ -46,16 +47,18 @@ class NFTTextFieldThemeData {
           ),
         ),
         textStyle: light.textStyle.copyWith(color: NFTColors.white),
+        backgroundColor: NFTColors.charlestonGreen2F,
       );
 
-  NFTTextFieldThemeData copyWith({
-    InputBorder? enabledBorder,
-    InputBorder? focusedBorder,
-    Color? cursorColor,
-    TextStyle? textStyle,
-    TextStyle? hintStyle,
-  }) {
+  NFTTextFieldThemeData copyWith(
+      {InputBorder? enabledBorder,
+      InputBorder? focusedBorder,
+      Color? cursorColor,
+      TextStyle? textStyle,
+      TextStyle? hintStyle,
+      Color? backgroundColor}) {
     return NFTTextFieldThemeData(
+      backgroundColor: backgroundColor ?? this.backgroundColor,
       enabledBorder: enabledBorder ?? this.enabledBorder,
       focusedBorder: focusedBorder ?? this.focusedBorder,
       cursorColor: cursorColor ?? this.cursorColor,
@@ -73,7 +76,8 @@ class NFTTextFieldThemeData {
           focusedBorder == other.focusedBorder &&
           cursorColor == other.cursorColor &&
           textStyle == other.textStyle &&
-          hintStyle == other.hintStyle;
+          hintStyle == other.hintStyle &&
+          backgroundColor == other.backgroundColor;
 
   @override
   int get hashCode =>
@@ -81,5 +85,6 @@ class NFTTextFieldThemeData {
       focusedBorder.hashCode ^
       cursorColor.hashCode ^
       textStyle.hashCode ^
-      hintStyle.hashCode;
+      hintStyle.hashCode ^
+      backgroundColor.hashCode;
 }
