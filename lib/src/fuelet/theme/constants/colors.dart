@@ -6,6 +6,8 @@ class FLTColors {
 
   static const blue = Color(0xff27A4FF);
   static const greenCow = Color(0xffC5FC3B);
+  static const offBlack = Color(0xff313030);
+
   static const environmentalStudy = Color(0xff8BC101);
   static const unicornSilver = Color(0xffE8E8E8);
 
