@@ -1,5 +1,5 @@
 class NFTAssetsPaths {
-  static const packageName = 'uikit';
+  static const packageName = 'fuelet_uikit';
 
   // === ETH Icons
   static const ethPurple = 'assets/icons/eth_purple.svg';
@@ -7,6 +7,7 @@ class NFTAssetsPaths {
   // === Arrows
   static const arrowUp = 'assets/icons/arrow_up.svg';
   static const arrowDown = 'assets/icons/arrow_down.svg';
+  static const arrowLeft = 'assets/icons/arrow_left.png';
   static const arrowRightUp = 'assets/icons/arrow_right_up.svg';
 
   // === Social Networks

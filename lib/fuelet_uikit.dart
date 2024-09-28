@@ -59,3 +59,4 @@ export 'src/fuelet/buttons/icon_button.dart';
 export 'src/fuelet/scaffold.dart';
 export 'src/fuelet/app_bar.dart';
 export 'src/fuelet/text_field.dart';
+export 'src/back_navigation_pannel/back_navigation.dart';
