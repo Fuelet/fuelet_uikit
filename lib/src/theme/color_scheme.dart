@@ -25,6 +25,7 @@ class NFTColorScheme {
   final Color seedPhraseTextColor;
   final Color walletListItemBorderColor;
   final Color radioBtnEnableStateBackgroundColor;
+  final Color radioBtnDisableStateBackgroundColor;
   final Color walletAddedLable;
   final Color walletAddedLableBackground;
   final Color progressIndicatorColor;
@@ -71,6 +72,7 @@ class NFTColorScheme {
       required this.seedPhraseTextColor,
       required this.walletListItemBorderColor,
       required this.radioBtnEnableStateBackgroundColor,
+      required this.radioBtnDisableStateBackgroundColor,
       required this.walletAddedLable,
       required this.walletAddedLableBackground,
       required this.progressIndicatorColor,
@@ -116,7 +118,8 @@ class NFTColorScheme {
       primaryBtnTxtColor: NFTColors.charlestonGreen2F,
       seedPhraseTextColor: FLTColors.environmentalStudy,
       walletListItemBorderColor: FLTColors.greenCow,
-      radioBtnEnableStateBackgroundColor: FLTColors.greenCow,
+      radioBtnEnableStateBackgroundColor: FLTColors.cerebralGrey,
+      radioBtnDisableStateBackgroundColor: FLTColors.grey9D,
       walletAddedLable: FLTColors.greenCow,
       walletAddedLableBackground: FLTColors.greenCow,
       progressIndicatorColor: FLTColors.greenCow,
@@ -162,7 +165,8 @@ class NFTColorScheme {
       primaryBtnTxtColor: NFTColors.charlestonGreen2F,
       seedPhraseTextColor: FLTColors.greenCow,
       walletListItemBorderColor: FLTColors.greenCow,
-      radioBtnEnableStateBackgroundColor: FLTColors.greenCow,
+      radioBtnEnableStateBackgroundColor: FLTColors.grey9D,
+      radioBtnDisableStateBackgroundColor: FLTColors.charlestonGreen2E,
       walletAddedLable: FLTColors.greenCow,
       walletAddedLableBackground: FLTColors.greenCow,
       progressIndicatorColor: FLTColors.greenCow,
@@ -209,6 +213,7 @@ class NFTColorScheme {
       Color? seedPhraseTextColor,
       Color? walletListItemBorderColor,
       Color? radioBtnEnableStateBackgroundColor,
+      Color? radioBtnDisableStateBackgroundColor,
       Color? walletAddedLable,
       Color? progressIndicatorColor,
       Color? walletAddedLableBackground,
@@ -263,6 +268,8 @@ class NFTColorScheme {
             walletListItemBorderColor ?? this.walletListItemBorderColor,
         radioBtnEnableStateBackgroundColor: radioBtnEnableStateBackgroundColor ??
             this.radioBtnEnableStateBackgroundColor,
+        radioBtnDisableStateBackgroundColor: radioBtnDisableStateBackgroundColor ??
+            this.radioBtnDisableStateBackgroundColor,
         walletAddedLable: walletAddedLable ?? this.walletAddedLable,
         walletAddedLableBackground:
             walletAddedLableBackground ?? this.walletAddedLableBackground,
@@ -278,9 +285,8 @@ class NFTColorScheme {
             bottomNavActiveItemColor ?? this.bottomNavActiveItemColor,
         additionalOfferListItemBorderColor: additionalOfferListItemBorderColor ??
             this.additionalOfferListItemBorderColor,
-        additionalOfferListItemBackgroundColor:
-            additionalOfferListItemBackgroundColor ??
-                this.additionalOfferListItemBackgroundColor,
+        additionalOfferListItemBackgroundColor: additionalOfferListItemBackgroundColor ??
+            this.additionalOfferListItemBackgroundColor,
         additionalOfferActionBtnBackgroundColor:
             additionalOfferActionBtnBackgroundColor ??
                 this.additionalOfferActionBtnBackgroundColor,
@@ -295,8 +301,8 @@ class NFTColorScheme {
             additionalOfferIndicatorColor ?? this.additionalOfferIndicatorColor,
         additionalOfferSelectedIndicatorColor: additionalOfferSelectedIndicatorColor ??
             this.additionalOfferSelectedIndicatorColor,
-        finishSettingUpIconBackgroundColor: finishSettingUpIconBackgroundColor ??
-            this.finishSettingUpIconBackgroundColor,
+        finishSettingUpIconBackgroundColor:
+            finishSettingUpIconBackgroundColor ?? this.finishSettingUpIconBackgroundColor,
         finishSettingUpIconColor: finishSettingUpIconColor ?? this.finishSettingUpIconColor,
         finishSettingUpListBackgroundColor: finishSettingUpListBackgroundColor ?? this.finishSettingUpListBackgroundColor,
         finishSettingUpListDividerBackgroundColor: finishSettingUpListDividerBackgroundColor ?? this.finishSettingUpListDividerBackgroundColor,
@@ -332,6 +338,8 @@ class NFTColorScheme {
           walletListItemBorderColor == other.walletListItemBorderColor &&
           radioBtnEnableStateBackgroundColor ==
               other.radioBtnEnableStateBackgroundColor &&
+          radioBtnDisableStateBackgroundColor ==
+              other.radioBtnDisableStateBackgroundColor &&
           walletAddedLable == other.walletAddedLable &&
           walletAddedLableBackground == other.walletAddedLableBackground &&
           progressIndicatorColor == other.progressIndicatorColor &&
@@ -389,6 +397,7 @@ class NFTColorScheme {
       seedPhraseTextColor.hashCode ^
       walletListItemBorderColor.hashCode ^
       radioBtnEnableStateBackgroundColor.hashCode ^
+      radioBtnDisableStateBackgroundColor.hashCode ^
       walletAddedLable.hashCode ^
       walletAddedLableBackground.hashCode ^
       progressIndicatorColor.hashCode ^
