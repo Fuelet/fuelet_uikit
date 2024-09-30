@@ -48,6 +48,7 @@ class NFTColorScheme {
   final Color finishSettingUpListBorderColor;
   final Color manageTokensBackgroundColor;
   final Color coloredText;
+  final Color commonBorderColor;
 
   const NFTColorScheme(
       {required this.backgroundColor,
@@ -94,7 +95,8 @@ class NFTColorScheme {
       required this.finishSettingUpListBorderColor,
       required this.transactionActionTextColor,
       required this.manageTokensBackgroundColor,
-      required this.coloredText});
+      required this.coloredText,
+      required this.commonBorderColor});
 
   static NFTColorScheme get light => NFTColorScheme(
       backgroundColor: NFTColors.white,
@@ -141,7 +143,8 @@ class NFTColorScheme {
       finishSettingUpListDividerBackgroundColor: FLTColors.unicornSilver,
       finishSettingUpListBorderColor: FLTColors.unicornSilver,
       manageTokensBackgroundColor: FLTColors.greyF5,
-      coloredText: FLTColors.environmentalStudy);
+      coloredText: FLTColors.environmentalStudy,
+      commonBorderColor: FLTColors.greenCow);
 
   static NFTColorScheme get dark => NFTColorScheme(
       backgroundColor: FLTColors.darkBackground,
@@ -188,7 +191,8 @@ class NFTColorScheme {
       finishSettingUpListDividerBackgroundColor: NFTColors.grey6D,
       finishSettingUpListBorderColor: NFTColors.darkGreyBackground,
       manageTokensBackgroundColor: FLTColors.charlestonGreen2F,
-      coloredText: FLTColors.greenCow);
+      coloredText: FLTColors.greenCow,
+      commonBorderColor: FLTColors.greenCow);
 
   NFTColorScheme copyWith(
       {Color? backgroundColor,
@@ -235,7 +239,8 @@ class NFTColorScheme {
       Color? finishSettingUpListDividerBackgroundColor,
       Color? finishSettingUpListBorderColor,
       Color? manageTokensBackgroundColor,
-      Color? coloredText}) {
+      Color? coloredText,
+      Color? commonBorderColor}) {
     return NFTColorScheme(
         backgroundColor: backgroundColor ?? this.backgroundColor,
         backgroundColorContrastive:
@@ -308,7 +313,8 @@ class NFTColorScheme {
         finishSettingUpListDividerBackgroundColor: finishSettingUpListDividerBackgroundColor ?? this.finishSettingUpListDividerBackgroundColor,
         finishSettingUpListBorderColor: finishSettingUpListBorderColor ?? this.finishSettingUpListBorderColor,
         manageTokensBackgroundColor: manageTokensBackgroundColor ?? this.manageTokensBackgroundColor,
-        coloredText: coloredText ?? this.coloredText);
+        coloredText: coloredText ?? this.coloredText,
+        commonBorderColor: commonBorderColor ?? this.commonBorderColor);
   }
 
   @override
@@ -374,7 +380,8 @@ class NFTColorScheme {
           finishSettingUpListBorderColor ==
               other.finishSettingUpListBorderColor &&
           manageTokensBackgroundColor == other.manageTokensBackgroundColor &&
-          coloredText == other.coloredText;
+          coloredText == other.coloredText &&
+          commonBorderColor == other.commonBorderColor;
 
   @override
   int get hashCode =>
@@ -419,5 +426,6 @@ class NFTColorScheme {
       finishSettingUpListDividerBackgroundColor.hashCode ^
       finishSettingUpListBorderColor.hashCode ^
       manageTokensBackgroundColor.hashCode ^
-      coloredText.hashCode;
+      coloredText.hashCode ^
+      commonBorderColor.hashCode;
 }
