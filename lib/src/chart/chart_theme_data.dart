@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import '../../fuelet_uikit.dart';
@@ -40,7 +41,7 @@ class NFTChartThemeData {
         ],
         backgroundColor: NFTColors.white,
         tooltipAccentTextColor: NFTColors.purple,
-        tooltipTitleColor: FLTColors.blue,
+        tooltipTitleColor: FLTColors.environmentalStudy,
         tooltipBgColor: FLTColors.greyF5,
         horizontalExtraLineColor: NFTColors.grey6D.withOpacity(0.1),
         barSelectedColor: NFTColors.blue,
