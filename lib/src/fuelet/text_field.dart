@@ -24,8 +24,10 @@ class FLTTextField extends StatelessWidget {
   final Color backgroundColor;
   final double? height;
   final List<ContextMenuButtonType> contextMenuItems;
+  final Widget? suffixIcon;
 
   const FLTTextField({
+    this.suffixIcon,
     this.focusNode,
     this.controller,
     this.hintText,
@@ -148,6 +150,7 @@ class FLTTextField extends StatelessWidget {
             16 + (additionalContentPadding?.bottom ?? 0),
           ),
           icon: icon,
+          suffixIcon: suffixIcon,
           iconColor: iconColor,
           border: InputBorder.none,
           hintText: hintText,

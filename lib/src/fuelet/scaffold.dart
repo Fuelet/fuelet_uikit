@@ -15,6 +15,7 @@ class FLTScaffold extends StatelessWidget {
   final bool addSafeArea;
   final bool extendBodyBehindAppBar;
   final bool unfocusOnTap;
+  final bool? resizeToAvoidBottomInset;
 
   const FLTScaffold({
     this.appBar,
@@ -28,6 +29,7 @@ class FLTScaffold extends StatelessWidget {
     this.addSafeArea = false,
     this.extendBodyBehindAppBar = false,
     this.unfocusOnTap = true,
+    this.resizeToAvoidBottomInset,
     Key? key,
   }) : super(key: key);
 
@@ -44,6 +46,7 @@ class FLTScaffold extends StatelessWidget {
         }
       },
       child: Scaffold(
+        resizeToAvoidBottomInset: resizeToAvoidBottomInset,
         appBar: appBar,
         backgroundColor:
             backgroundColor ?? themeData.colorScheme.backgroundColor,
