@@ -2,19 +2,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../fuelet_uikit.dart';
-import 'circle_back_button.dart';
 import 'back_navigation_size.dart';
+import 'circle_back_button.dart';
 
 class BackNavigation extends StatelessWidget {
   final String title;
   final Widget? suffixTitleWidget;
   final Widget? action;
+  final TextStyle? titleStyle;
   final bool disableBackBtn;
+
   const BackNavigation(
       {super.key,
       required this.title,
       this.suffixTitleWidget,
       this.action,
+      this.titleStyle,
       this.disableBackBtn = false});
 
   @override
@@ -54,9 +57,10 @@ class BackNavigation extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                   title,
-                  style: NFTTypography.header5SemiBold.copyWith(
-                    color: NFTTheme.of(context).colorScheme.mainTextColor,
-                  ),
+                  style: titleStyle ??
+                      NFTTypography.header5SemiBold.copyWith(
+                        color: NFTTheme.of(context).colorScheme.mainTextColor,
+                      ),
                 ),
               ),
             ],
