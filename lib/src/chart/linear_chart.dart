@@ -92,8 +92,8 @@ class _NFTChartState extends State<NFTChart> {
       child: NFTChartWrapper(
         chart: LineChart(
           mainData(theme),
-          swapAnimationDuration: const Duration(milliseconds: 500),
-          swapAnimationCurve: Curves.easeIn,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeIn,
         ),
         buttonsConfigs: widget.buttonsConfigs,
         isLoading: widget.isLoading,
@@ -202,7 +202,7 @@ class _NFTChartState extends State<NFTChart> {
             )
             .toList(),
         touchTooltipData: LineTouchTooltipData(
-          tooltipBgColor: theme.chartThemeData.tooltipBgColor,
+          getTooltipColor: (_) => theme.chartThemeData.tooltipBgColor,
           fitInsideHorizontally: true,
           fitInsideVertically: true,
           tooltipRoundedRadius: 4,
