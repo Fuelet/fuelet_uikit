@@ -107,7 +107,7 @@ class _NFTBarChartState extends State<NFTBarChart> {
       groupsSpace: spaceWidth,
       barTouchData: BarTouchData(
         touchTooltipData: BarTouchTooltipData(
-          tooltipBgColor: theme.colorScheme.backgroundColor,
+          getTooltipColor: (_) => theme.colorScheme.backgroundColor,
           fitInsideHorizontally: true,
           fitInsideVertically: true,
           tooltipRoundedRadius: 4,
